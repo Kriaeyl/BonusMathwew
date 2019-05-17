@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 double first = Double.parseDouble(tv1.getText().toString());
                 double second = Double.parseDouble(tv2.getText().toString());
-                Intent intent = new Intent(getBaseContext(), SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra("owo", first);
                 intent.putExtra("uwu", second);
                 intent.putExtra("ono",oper.isChecked());
